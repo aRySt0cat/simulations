@@ -71,7 +71,6 @@ export default {
         sketch.line(this.pointPosition.x, this.pointPosition.y, sketch.mouseX, sketch.mouseY);
       }
       if (this.simulationRunning) {
-        // Update point position and velocity using the Euler method
         const accel = this.calculateAcceleration();
         this.pointVelocity.add(accel);
         this.pointPosition.add(this.pointVelocity);

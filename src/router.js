@@ -1,5 +1,6 @@
 import GradientDescentView from '@/views/GradientDescentView.vue';
 import HomePage from '@/views/HomePage.vue';
+import SimulationGravity2View from '@/views/SimulationGravity2View.vue';
 import SimulationGravityView from '@/views/SimulationGravityView.vue';
 import Vue from 'vue';
 import Router from 'vue-router';
@@ -15,6 +16,10 @@ const router = new Router({
     {
       path: '/gravity_simple',
       component: SimulationGravityView
+    }, 
+    {
+      path: '/gravity_bound',
+      component: SimulationGravity2View
     }, 
     {
       path: '/gradient_descent', 

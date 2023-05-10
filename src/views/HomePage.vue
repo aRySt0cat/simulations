@@ -34,7 +34,8 @@ export default {
   data() {
     return {
       physics_simulations: [
-        { name: "重力", path: "/gravity_simple" }
+        { name: "重力 (衝突なし)", path: "/gravity_simple" }, 
+        { name: "重力 (衝突あり)", path: "/gravity_bound"}
         // Add more simulations here
       ],
       ml_simulations: [
